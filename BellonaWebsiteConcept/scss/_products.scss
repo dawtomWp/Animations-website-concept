@@ -1,0 +1,166 @@
+.products {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(238, 238, 238);
+   // min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    & .shape {
+        position: absolute;
+        width: 20%;
+        left: 0;
+        bottom: -25%;
+        transform: rotate((200deg));
+    }
+
+    .products__container {
+         display: flex;
+        .products__card {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 600px;
+            height: 350px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .card-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            border-radius: 20px;
+            overflow:hidden;
+            
+            &:before {
+               content: '';
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: $first-color;
+               clip-path: circle(120px at center);
+               transition: 0.5s;
+            }
+         
+        }
+        .card-circle .even {
+            *:before {
+                background-color: $second-color;
+            }
+        }
+        .products__card:hover .card-circle:before {
+            background-color: $second-color;
+            clip-path: circle(400px at center);
+        }
+        .products__card img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 300px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .products__card:hover img {
+            left: 72%;
+            height: 500px;
+        } 
+        .card-content {
+            position: relative;
+            color: #fff;
+            width: 50%;
+            left: 20%;
+            padding: 20px 20px 20px 40px;
+            transition: 0.5s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .card-content p {
+            font-size: 1em;
+        }
+        .card-content h2 {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 2em;
+            line-height: 1em;
+        }
+        .card-content button {
+            border: none;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color:$first-color;
+            animation: glowButton 2s linear infinite alternate;
+            border-radius: 20px;
+            & a {
+                text-transform: uppercase;
+                font-size: 1.5em;
+                font-weight: 700;
+                text-decoration: none;
+                color: $second-color;
+                transition: .5s;
+            }
+            &:hover a {
+                color: #fff;
+            }
+        }
+        .products__card:hover .card-content {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+    }
+    .products__buttons {
+        margin: 80px 0 50px;
+
+        & button {
+            padding: 15px 20px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        & .products__buttonOne {
+           background-color:$first-color;
+           color: $second-color;
+           transition: 1s;
+
+           &:hover {
+            background-color:$second-color;
+            color: $first-color;
+           }
+        }
+        & .products__buttonTwo {
+            background-color:$second-color;
+            color: $first-color;
+            transition: 1s;
+            &:hover {
+            background-color:$first-color;
+           color: $second-color; 
+            }
+         }
+    }
+    .products__title {
+        margin: 50px 0px 10px;
+        font-size: 4vw;
+        color: $second-color;
+        & span {
+            color: $first-color;
+            background-color:$second-color;
+            padding-left: 40px;
+        }
+     
+    }
+    .products__desc {
+        font-size: 1.3vw;
+        padding-bottom: 80px
+    }
+}

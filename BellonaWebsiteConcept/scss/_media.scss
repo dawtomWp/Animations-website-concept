@@ -1,0 +1,190 @@
+@media (max-width:1024px) {
+    .contact {
+        .contact__inputs {   
+            align-items: center;         
+            width: 70vw !important;
+        }
+        .contact__info {
+            position: initial;
+            width: 70vw;
+            height: 35%;
+            margin: 0 auto;
+            text-align: center;
+            left: initial;
+            top: initial;
+            margin-bottom: 50px;
+            & h2 {
+                font-size: 5vw;
+            }   
+            .contact .contact__inputsFields {
+                align-items: center;
+            }       
+        }
+         .contact__info span {
+             font-size: 2vw;
+         }
+         .contact__media span i {
+             font-size: 5vw;
+         }
+  
+    }
+    header {
+        .header__main p {
+           top:42% 
+        }
+ 
+    }
+    .nav ul li a:before {
+        font-size: 3.5em;
+    }
+    main {
+        .about__info {
+            width: 85%;
+        }
+
+    }
+    .products {
+
+        .products__card {
+            width: auto;
+            max-width: 320px;
+            align-items: flex-start !important;
+            &:hover {
+              height: 600px !important; 
+            }
+        }
+   
+    }
+    .card-content {
+        width: 100% !important;
+        left: 0 !important;
+        padding: 30px !important; 
+     }
+     .products__card:hover img {
+         top: 70% !important;
+         left: 50% !important;
+         height: 300px !important;
+     }
+
+}
+
+@media (max-width:768px) {
+    .mainFooter { 
+        & p {
+            font-size: 2vw;
+        }  
+        .contact__media {
+            width: 25%;
+            font-size: 4vw;
+        }
+    }
+    .contact {
+        width: 100%;
+        padding: 70px 0;
+         .contact__sectionTitle {
+            font-size: 6.5vw;
+        }
+        .contact__title {
+            text-align: center;
+        }
+
+        .contact__inputs {
+            width: 90vw !important;
+            margin: 0 auto;
+
+            & button {
+                width: 20vw;
+            }
+        }
+        .contact__inputsFields {
+            width: 64vw !important;
+
+            & input {
+                width: 40vw;
+                font-size: 4vw;
+            }
+        }
+    }
+    header {
+        .header__main h2 {
+            font-size: 12vw;
+         }
+        .header__main p {
+           font-size: 4vw;
+        }
+    }
+    .nav ul li a {
+        font-size: 2em;
+    }
+    .nav ul li a:before {
+        font-size: 3.5em;
+    }
+    main {
+        width: 95%;
+        flex-direction: column;
+        overflow-x: hidden;
+        .about__img:before {
+            border: 7px solid $second-color
+        }
+        .about__list {
+            width: 110%;
+        }
+        .about__info {
+            margin-top: 60px;
+            font-size: 2.5vw;
+        }
+        .about__info span i {
+            font-size: 6.5vw;
+        }
+        .about__title {
+            font-size: 6.5vw;
+        }
+    }
+    .products {
+        .products__container {
+            flex-direction: column;
+        }
+        .products__title {
+            font-size: 6.5vw;
+        }
+        .products__desc {
+            font-size:2.5vw;
+            text-align: center;
+        }
+    }
+    .newsletter {
+        .newsletter__title {
+            font-size: 6.5vw;
+        }
+        .newsletter__desc {
+            text-align: center;
+            font-size: 2.5vw;
+        }
+    }
+    button,input {
+        padding: 11px 16px !important;
+    }
+}
+@media (max-width:476px) {
+    .mainFooter { 
+        & p {
+            font-size: 3vw;
+        }  
+        .contact__media {
+            width: 35%;
+            font-size: 6vw;
+        }
+    }
+    header {
+        .header__main h2 {
+            top:55%;
+         }
+        .header__main p {
+           top:40%
+        }
+
+    }
+    .nav ul li a:before {
+        font-size: 1.5em;
+    }
+}

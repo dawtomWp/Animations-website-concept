@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellona</title>
+    <link rel="icon" href="images/product1.png">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="hamburger" id='Hamburger'><i class="fas fa-bars" id='MenuIcon'></i></button>
+    <header>
+        <section class="header__main" id='Home'>
+
+            <h2 class='mainTitle'>Bell<span>ona</span></h2>
+            <p class="mainQuote">Especially for you</p>
+       
+            <button class="header__scrollButton"><i class="fas fa-angle-double-down"></i></button>
+            <div class="header__banner" id="MainBanner">
+                <div class="header__blocks" id='Block'></div>
+            </div>
+         
+      
+        </section>
+
+       
+    </header>
+
+    <nav class='nav' id='Navigation'>
+        <span style="--i:0"></span>
+        <span style="--i:1"></span>
+        <span style="--i:2"></span>
+        <span style="--i:3"></span>
+        <span style="--i:4"></span>
+        <ul>
+            <li class='menuLink'><a data-text='Home' href="#Home">Home</a></li>
+            <li class='menuLink'><a data-text='About' href="#AboutUs">About</a></li>
+            <li class='menuLink'><a data-text='Products' href="#Products">Products</a></li>
+            <li class='menuLink'><a data-text='Newsletter' href="#Newsletter">Newsletter</a></li>
+            <li class='menuLink'><a data-text='Contact' href="#Contact">Contact</a></li>
+            <li class='menuLink' id="Back"><a data-text='Back' href="window">Back</a></li>
+
+        </ul>
+
+     
+      </nav>
+
+    <main id='AboutUs'>
+        <img src="images/shapeGray.svg" alt="" class="shapeGray">
+        <div class="about__img">
+            <img class = "about__photo" src="/images/mainsectionImg.jpg" alt="">
+        </div>
+        <div class="about__info">
+            <h2 class="about__title">About <span>Us</span></h2>
+            <p>Lorem ipsum dolor obcaecati accusantium, necessitatibus id velit aut voluptate veritatis aperiam repudiandae minus commodi facilis veniam eius rerum ab libero totam illo! Exercitationem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, laboriosam?</p>
+
+            
+            <div class="about__list">
+                <span><i class="fas fa-coins"></i> Lorem ipsum dolor sit amet consectetur.</span>
+                <span><i class="fas fa-comments"></i>Lorem ipsum dolor sit amet consectetur  elit.</span>
+                <span><i class="fas fa-cloud-meatball"></i>Lorem ipsum dolor sit amet.</span>
+                <span><i class="fas fa-code-branch"></i> Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+            </div>
+        </div>
+
+        <!-- <img src="images/mainsectionImg.jpg" alt=""> -->
+    </main>
+
+    <section class="products" id="Products">
+        <img class='shape' src="images/shape1.svg" alt="">
+        <h2 class="products__title"><span>Our</span> Products</h2>
+        <p class="products__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eos quibusdam magnam! Illum, omnis maiores!</p>
+        <div class="products__container">
+            <div class="products__card">
+                <div class="card-circle"></div>
+                <img src="/images/product1.png" alt="">
+                <div class="card-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quo, aliquam minus ad libero omnis cumque autem ea nesciunt esse.</p>
+                   <button> <a href="">Buy Now</a></button>
+                </div>
+            </div>
+            <div class="products__card" id='Product2'>
+                <div class="card-circle"></div>
+                <img src="/images/product1.png" alt="">
+                <div class="card-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quo, aliquam minus ad libero omnis cumque autem ea nesciunt esse.</p>
+                   <button> <a href="">Buy Now</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="products__buttons">
+            <button class="products__buttonOne">Show more</button>
+            <button class="products__buttonTwo">Contact</button>
+        </div>
+
+    </section>
+
+    <section class="newsletter" id="Newsletter">
+        
+        <h2 class="newsletter__title" id='NewsTitle'>Join our news<span>letter</span></h2>
+        <p class="newsletter__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias voluptas corrupti exercitationem.</p>
+        <p id='word1'>Join</p>
+        <p id='word2'>Our</p>
+        <p id='word3'>Newsletter</p>
+        <div class="newsletter__register">
+            <input type="text">
+            <button>Send</button>
+        </div>
+    </section>
+
+    <section class="contact" id="Contact">
+        <img class="contactShape" src="images/shape1.svg" alt="">
+        <h2 class="contact__sectionTitle"><span>Con</span>tact</h2>
+        <div class="contact__info">
+            <h2 class="contact__title">Contact Info</h2>
+            
+            <ul class="info">
+                <li>
+                    <span><i class="fas fa-street-view"></i></span>
+                    <span>2912 Meadowbrook Road, <br>
+                          Los Angeles, CA <br>
+                       90432
+                    </span>
+                </li>
+                <li>
+                    <span><i class="far fa-envelope"></i></span>
+                    <span>lorem@ipsum.com</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <span>987-654-321</span>
+                </li>
+            </ul>
+
+            <div class="contact__media">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-pinterest-p"></i></span>
+            </div>
+        </div>
+        <div class="contact__inputs">
+         
+            <div class="contact__inputsFields">
+                <h2 class="contact__title">Send a Message</h2>
+                <form action="">
+                <div class="name">
+                    <p>First Name</p>
+                    <input type="text">
+                </div>
+                <div class="lastname">
+                    <p>Last Name</p>
+                    <input type="text">
+                </div>
+                <div class="email">
+                    <p>Email Address</p>
+                    <input type="text">
+                </div>
+                <div class="number">
+                    <p>Mobile Number</p>
+                    <input type="text">
+                </div>
+                <div class="message">
+                    <p>Write your message here</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+            <button class="contact__button">Send</button>
+            </div>
+        
+
+          
+        
+        </div>
+    </section>
+    <footer class="mainFooter">
+        <p>Designed By Dawid Tomczyk 2020</p>
+        <div class="contact__media">
+            <span><a href="" class="fab fa-facebook-f"></a></span>
+            <span><a href="" class="fab fa-instagram"></a></span>
+            <span><a href="" class="fab fa-twitter"></a></span>
+            <span><a href="" class="fab fa-pinterest-p"></a></span>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
+    <script src="js/gsapAnim.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

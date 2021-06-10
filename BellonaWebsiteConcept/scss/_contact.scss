@@ -1,0 +1,151 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 150px 0;
+    width: 100%;
+
+    & img {
+        position: absolute;
+        object-fit: initial;
+        width: 20%;
+        top: -5%;
+        left: 85vw;
+        transform: rotate(25deg);
+    }
+
+    .contact__sectionTitle {
+        font-size: 4vw;
+        text-align: center;
+        margin-bottom: 80px;
+        z-index: 10;
+        color:$second-color;
+        & span {
+            color: $first-color;
+            background-color:$second-color;
+        }
+    }
+
+    .contact__inputs {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        min-height: 600px;
+        align-items: flex-end;
+        background-color: $second-color;
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.822);
+        width: 65vw;
+        & button {
+            padding: 15px 20px;
+            width: 10vw;
+        }
+        .contact__title {
+            margin: 0;
+            width: 98%;
+            color: $first-color;
+        }
+        .contact__inputsFields {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 45vw;
+        }
+        form {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: #fff;
+
+            & p {
+                margin-top: 20px;
+            }
+    
+        }
+        input {
+            border: none;
+            background-color: $second-color;
+            border-bottom: 2px solid $first-color;
+            height: 60px;
+            width: 21.5vw;
+            font-size: 1vw;
+            color: #fff;
+        }
+        textarea {
+            border: none;
+            color: #fff;
+            background-color: $second-color;
+            border-bottom: 2px solid $first-color;
+            width: 44vw;
+            font-size: 1vw;
+        }
+    }
+    .contact__info {
+        position: absolute;
+        top: 36.5%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        background-color:$first-color;
+        color: $second-color;
+        height: 500px;
+        width: 22vw;
+        z-index: 1;
+        padding: 20px;
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.822);
+
+        & h2 {
+            color: #fff;
+            font-size: 1.8vw;
+        }
+        & li {
+            list-style: none;
+        }
+    }
+    .contact__info span {
+        font-size: 1vw;
+        cursor: pointer;
+        transition: 1s;
+        
+        & i {
+        font-size: 2vw;
+        margin-top: 10px;
+        margin-right: 10px;
+        }
+ 
+     }
+     .contact__info span:hover  {
+         color: white;
+     }
+    
+    .contact__media {
+        margin-top: 120px;
+        justify-self: flex-end;
+        color: #fff;
+    }
+    .contact__button {
+        text-transform: uppercase;
+        padding: 15px 25px;
+        justify-self: flex-start;
+        color: $second-color;
+        border: none;
+        font-weight: 700;
+        font-size: 1em;
+        background-color:$first-color;
+        cursor: pointer;
+        transition: 1s;
+        &:hover {
+           color: #fff;
+        }
+    }
+
+
+
+
+
+}

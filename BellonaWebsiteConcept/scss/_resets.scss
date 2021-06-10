@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$first-color:rgb(238, 106, 139);
+$first-colorLight:rgb(241, 187, 200);
+$first-colorDark:rgb(221, 3, 58);
+$second-color:#656565;
+
+
+body {
+    font-family: Poppins;
+
+}
+.activeMenu {
+    color: $first-color !important;
+    background-color: #fff !important;
+}
+#word1,#word2,#word3 {
+    color: white;
+    visibility: hidden;
+    position: absolute;
+    font-size: 16vw;
+    font-weight: 700;
+}
+.hamburger {
+    position: fixed;
+    text-align: center;
+    top: 1%;
+    width: 50px;
+    height: 50px;
+    left: 1%;
+    font-size: 21px;
+    z-index: 50;
+    outline: transparent;
+    color: $second-color;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+
+}

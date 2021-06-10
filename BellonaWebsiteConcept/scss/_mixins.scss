@@ -1,0 +1,54 @@
+@mixin centerPosition {
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+@mixin trueCenterPosition {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes shatteredImage {
+    0% {
+        transform: translateZ(2000px);
+        background:url('/images/mainImg.jpg') ;
+        background-position: top;
+        background-attachment: fixed;
+        background-size: cover;
+
+  
+ 
+    }
+    100% {
+        transform: translateZ(0px);
+        background:url('/images/mainimg.jpg') ;
+        background-position: top;
+        background-attachment: fixed;
+        background-size: cover;
+ 
+     
+    }
+}
+@keyframes glowButton {
+    0% {
+       text-shadow: 0 0 0 transparent;
+      color: #fff;
+    }
+    100% {
+        text-shadow: 1px 10px 12px $second-color;
+     
+    }
+}
+
+@keyframes shakeIcons {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform:rotate(18deg)
+    }
+    100% {
+        transform:rotate(0deg)
+    }
+}

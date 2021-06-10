@@ -1,0 +1,26 @@
+.mainFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $second-color;
+    color: $first-color;
+
+    & p {
+        font-size: 1vw;
+    }
+
+    .contact__media {
+        display: flex;
+        width: 16%;
+        justify-content: space-around;
+        font-size: 2vw;
+        & a {
+            text-decoration: none;
+            color: $first-color;
+            transition: 1s;
+            &:hover {
+                color: #fff;
+            }
+        } 
+    }
+}
