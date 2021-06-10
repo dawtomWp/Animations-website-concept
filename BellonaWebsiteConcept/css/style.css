@@ -399,9 +399,9 @@ main .about__img:before {
   content: '';
   position: absolute;
   top: 3%;
-  width: 100%;
+  width: 90%;
   height: 100%;
-  left: -15%;
+  left: -2%;
   z-index: 1;
   border: 15px solid #656565;
 }
