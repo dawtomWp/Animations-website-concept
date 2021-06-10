@@ -52,7 +52,7 @@ body {
   100% {
     -webkit-transform: translateZ(0px);
             transform: translateZ(0px);
-    background: url("mainimg.jpg");
+    background: url("mainImg.jpg");
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
@@ -71,7 +71,7 @@ body {
   100% {
     -webkit-transform: translateZ(0px);
             transform: translateZ(0px);
-    background: url("mainimg.jpg");
+    background: url("mainImg.jpg");
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
